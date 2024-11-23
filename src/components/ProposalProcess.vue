@@ -47,7 +47,7 @@ const veto = computed(() =>
     </div>
     <div
       class="h-6 bg-[#B71C1C] flex items-center text-white overflow-hidden"
-      :style="`width: ${veto}`"
+      :style="`width: ${veto};`"
       :title="veto"
     >
       {{ veto }}
@@ -61,11 +61,9 @@ const veto = computed(() =>
     </div>
   </div>
 </template>
-
 <style scoped>
 .progress {
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 1); /* Arka plan tam siyah (rgba formatında) */
-  border: 2px solid rgba(211, 211, 211, 1); /* Kenarlar açık gri (rgba formatında) */
+  background-color: rgba(128, 128, 128, 0.178);
 }
 </style>
