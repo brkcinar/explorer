@@ -32,14 +32,14 @@ const veto = computed(() =>
 <template>
   <div class="progress rounded-[3px] h-6 text-xs flex items-center">
     <div
-      class="h-6 bg-yes flex items-center pl-2 text-white overflow-hidden"
+      class="h-6 bg-green-500 flex items-center pl-2 text-white overflow-hidden"
       :style="`width: ${yes}`"
       :title="yes"
     >
       {{ yes }}
     </div>
     <div
-      class="h-6 bg-no flex items-center text-white overflow-hidden"
+      class="h-6 bg-red-500 flex items-center text-white overflow-hidden"
       :style="`width: ${no}`"
       :title="no"
     >
@@ -47,11 +47,24 @@ const veto = computed(() =>
     </div>
     <div
       class="h-6 bg-[#B71C1C] flex items-center text-white overflow-hidden"
-      :style="`width: ${veto};`"
+      :style="`width: ${veto}`"
       :title="veto"
     >
       {{ veto }}
     </div>
     <div
-      class="h-6 bg-secondary flex items-center text-white overflow-hidden"
-      
+      class="h-6 bg-yellow-500 flex items-center text-white overflow-hidden"
+      :style="`width: ${abstain}`"
+      :title="abstain"
+    >
+      {{ abstain }}
+    </div>
+  </div>
+</template>
+
+<style scoped>
+.progress {
+  overflow: hidden;
+  background-color: rgba(128, 128, 128, 0.178);
+}
+</style>
