@@ -65,6 +65,6 @@ const veto = computed(() =>
 <style scoped>
 .progress {
   overflow: hidden;
-  background-color: rgba(128, 128, 128, 0.178);
+  background-color: #000000; /* Arka plan siyah */
 }
 </style>
