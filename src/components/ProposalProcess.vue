@@ -54,16 +54,4 @@ const veto = computed(() =>
     </div>
     <div
       class="h-6 bg-secondary flex items-center text-white overflow-hidden"
-      :style="`width: ${abstain}`"
-      :title="abstain"
-    >
-      {{ abstain }}
-    </div>
-  </div>
-</template>
-<style scoped>
-.progress {
-  overflow: hidden;
-  background-color: rgba(128, 128, 128, 0.178);
-}
-</style>
+      
