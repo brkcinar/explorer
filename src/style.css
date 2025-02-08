@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html,body {
+html, body {
   height: 100%;
 }
 
@@ -23,14 +23,26 @@ body {
 :root {
   --text-main: #333;
   --text-secondary: #4b525d;
-  --bg-active: #fbfbfc;
+  --bg-active: #d1d1d1; /* Açık gri (Kenar ve Üst Kısım) */
+  --bg-content: #3a3a3a; /* Koyu gri (Orta Kısım) */
 }
 
 html.dark,
 html[data-theme='dark'] {
   --text-main: #f7f7f7;
   --text-secondary: #6f6e84;
-  --bg-active: #242b40;
+  --bg-active: #a0a0a0; /* Açık gri (Kenar ve Üst Kısım - Dark Mode) */
+  --bg-content: #2b2b2b; /* Koyu gri (Orta Kısım - Dark Mode) */
+}
+
+body {
+  background-color: var(--bg-active);
+}
+
+main, .container, .content, .main-wrapper {
+  background-color: var(--bg-content);
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .table th:first-child {
