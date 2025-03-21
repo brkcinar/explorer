@@ -1,0 +1,20 @@
+{
+    "chain_name": "selfchain",
+    "coingecko": "",
+    "api": ["https://selfchain-testnet-api.hibunode.com/"], 
+    "rpc": ["https://selfchain-testnet-rpc.hibunode.com/"],
+    "snapshot_provider": "",
+    "sdk_version": "v0.50.11-evmos",
+    "coin_type": "60",
+    "min_tx_fee": "4000",
+    "addr_prefix": "ethm",
+    "logo": "/logos/selfchainlogo.png",
+    "keplr_features": ["eth-address-gen", "eth-key-sign"],
+    "assets": [{
+        "base": "aself",
+        "symbol": "SELF",
+        "exponent": "6", 
+        "coingecko_id": "",
+        "logo": "/logos/selfchainlogo.png"
+    }]
+}
