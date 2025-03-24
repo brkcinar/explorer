@@ -1,20 +1,20 @@
 {
     "chain_name": "selfchain",
-    "coingecko": "",
-    "api": ["https://selfchain-testnet-api.hibunode.com/"], 
-    "rpc": ["https://selfchain-testnet-rpc.hibunode.com/"],
+    "coingecko": "self-chain",
+    "api": ["https://selfchain-testnet-api.hibunode.com"],
+    "rpc": ["https://selfchain-testnet-rpc.hibunode.com"],
     "snapshot_provider": "",
-    "sdk_version": "v0.50.11-evmos",
-    "coin_type": "60",
-    "min_tx_fee": "4000",
-    "addr_prefix": "ethm",
-    "logo": "/logos/selfchainlogo.png",
-    "keplr_features": ["eth-address-gen", "eth-key-sign"],
+    "sdk_version": "0.47.4",
+    "coin_type": "118",
+    "min_tx_fee": "10",
+    "addr_prefix": "self",
+    "logo": "https://explorer.selfchain.xyz/logos/selfchain.png",
+    "theme_color": "#4B7BEC",
     "assets": [{
-        "base": "aself",
-        "symbol": "SELF",
-        "exponent": "6", 
-        "coingecko_id": "",
-        "logo": "/logos/selfchainlogo.png"
+        "base": "uslf",
+        "symbol": "SLF",
+        "exponent": "6",
+        "coingecko_id": "self-chain",
+        "logo": "https://explorer.selfchain.xyz/logos/selfchain.png"
     }]
 }
